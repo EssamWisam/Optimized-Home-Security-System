@@ -1,0 +1,293 @@
+#---------------------------------------------------------------------
+# start session at Mon Jan 3 13:16:34 2022
+# version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
+# Running on localhost.localdomain 1core 3.9GBytes 3.0GHz 64bits mode pid 4425 
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+setup_nrf
+source flow_scripts/import_variables.tcl
+source flow_scripts/0_import.tcl > LOGs/import0.log
+start
+## trigger_gui -name main:activate_window -param design:view
+set_option -name toolbar:main:floorplan:location -value {0 0}
+set_option -name toolbar:main:layers:location -value {0 0}
+set_option -name toolbar:main:interactive_modes:location -value {0 77}
+set_option -name toolbar:main:windows:location -value {60 20}
+set_option -name toolbar:main:zoom:location -value {310 20}
+set_option -name toolbar:main:custom_editing:location -value {508 20}
+set_option -name toolbar:main:objects:location -value {735 20}
+set_option -name toolbar:main:cross_probe:location -value {412 48}
+set_option -name window:hierarchy:explorer:location -value {62 77}
+set_option -name window:hierarchy:explorer:size -value {260 771}
+set_option -name window:main:message_area:location -value {328 623}
+set_option -name window:main:message_area:size -value {1592 225}
+set_option -name window:main:view:location -value {30 52}
+## trigger_gui -name design:create_pg_rings
+set_option -name window:design:create_pg_rings:state -value visible
+set_option -name window:design:create_pg_rings:size -value {936 603}
+set_option -name trigger:design:create_pg_rings:hor_ver_layer_link -value true
+set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL8
+set_option -name trigger:design:create_pg_rings:horizontal_wire -value METAL8
+set_option -name trigger:design:create_pg_rings:location_left -value 1
+set_option -name trigger:design:create_pg_rings:location_right -value 1
+set_option -name trigger:design:create_pg_rings:location_bottom -value 1
+set_option -name trigger:design:create_pg_rings:location_top -value 1
+set_option -name trigger:design:create_pg_rings:location_left -value 14
+set_option -name trigger:design:create_pg_rings:location_right -value 14
+set_option -name trigger:design:create_pg_rings:location_bottom -value 14
+set_option -name trigger:design:create_pg_rings:location_top -value 14
+set_option -name trigger:design:create_pg_rings:location_left -value 140
+set_option -name trigger:design:create_pg_rings:location_right -value 140
+set_option -name trigger:design:create_pg_rings:location_bottom -value 140
+set_option -name trigger:design:create_pg_rings:location_top -value 140
+set_option -name trigger:design:create_pg_rings:location_left -value 1400
+set_option -name trigger:design:create_pg_rings:location_right -value 1400
+set_option -name trigger:design:create_pg_rings:location_bottom -value 1400
+set_option -name trigger:design:create_pg_rings:location_top -value 1400
+set_option -name trigger:design:create_pg_rings:step -value 16000
+set_option -name trigger:design:create_pg_rings:step -value 8000
+create_pg_rings -partitions "logic_hw" -nets "VDD" -window false -layers { metal8 metal8 } -widths 4000a -step 8000a -offset { 1400a 1400a 1400a 1400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
+set_option -name window:design:create_pg_rings:state -value hidden
+zoom_to -target area -xl_area -5730a -yb_area 2559a -xr_area 124685a -yt_area 137615a
+zoom_to -target area -xl_area -1699a -yb_area 26486a -xr_area 50466a -yt_area 80508a
+zoom_to -target area -xl_area -1161a -yb_area 29676a -xr_area 40569a -yt_area 72893a
+zoom_to -target area -xl_area -731a -yb_area 32228a -xr_area 32652a -yt_area 66801a
+zoom_to -target area -xl_area -395a -yb_area 27039a -xr_area 41332a -yt_area 70254a
+zoom_to -target area -xl_area 24a -yb_area 21063a -xr_area 52182a -yt_area 75081a
+zoom_to -target area -xl_area 178a -yb_area 30973a -xr_area 41904a -yt_area 74187a
+zoom_to -target area -xl_area 301a -yb_area 38970a -xr_area 33681a -yt_area 73540a
+zoom_to -target area -xl_area 399a -yb_area 45367a -xr_area 27103a -yt_area 73023a
+zoom_to -target area -xl_area 478a -yb_area 50485a -xr_area 21840a -yt_area 72609a
+zoom_to -target area -xl_area 1689a -yb_area 38261a -xr_area 37292a -yt_area 75134a
+zoom_to -target area -xl_area 6235a -yb_area -7139a -xr_area 95242a -yt_area 85042a
+zoom_to -target area -xl_area 8446a -yb_area -25193a -xr_area 119704a -yt_area 90032a
+zoom_to -target area -xl_area -3533a -yb_area -44075a -xr_area 135538a -yt_area 99955a
+zoom_to -target area -xl_area -15529a -yb_area -79514a -xr_area 158308a -yt_area 100521a
+zoom_to -target area -xl_area -30524a -yb_area -123813a -xr_area 186770a -yt_area 101229a
+zoom_to -target area -xl_area -49268a -yb_area -179297a -xr_area 222348a -yt_area 102003a
+zoom_to -target area -xl_area -27200a -yb_area -124586a -xr_area 190091a -yt_area 100452a
+zoom_to -target area -xl_area -9546a -yb_area -80817a -xr_area 164285a -yt_area 99211a
+zoom_to -target area -xl_area -30565a -yb_area -116609a -xr_area 186722a -yt_area 108424a
+zoom_to -target area -xl_area -100335a -yb_area -235918a -xr_area 261809a -yt_area 139136a
+zoom_to -target area -xl_area -143018a -yb_area -311962a -xr_area 309660a -yt_area 156854a
+zoom_to -target area -xl_area -194757a -yb_area -409554a -xr_area 371089a -yt_area 176464a
+zoom_to -target area -xl_area -258277a -yb_area -536735a -xr_area 449029a -yt_area 195786a
+zoom_to -target area -xl_area -193313a -yb_area -394267a -xr_area 372530a -yt_area 191748a
+zoom_to -target area -xl_area -106696a -yb_area -204311a -xr_area 270531a -yt_area 186364a
+zoom_to -target area -xl_area -48951a -yb_area -77673a -xr_area 202532a -yt_area 182775a
+zoom_to -target area -xl_area -25443a -yb_area -29274a -xr_area 175742a -yt_area 179083a
+## trigger_gui -name design:create_pg_rings
+set_option -name window:design:create_pg_rings:state -value visible
+set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL7
+set_option -name trigger:design:create_pg_rings:horizontal_wire -value METAL7
+set_option -name trigger:design:create_pg_rings:step -value 16000
+set_option -name trigger:design:create_pg_rings:step -value 8000
+set_option -name trigger:design:create_pg_rings:location_left -value 400
+set_option -name trigger:design:create_pg_rings:location_right -value 400
+set_option -name trigger:design:create_pg_rings:location_bottom -value 400
+set_option -name trigger:design:create_pg_rings:location_top -value 400
+set_option -name trigger:design:create_pg_rings:location_left -value 9400
+set_option -name trigger:design:create_pg_rings:location_right -value 9400
+set_option -name trigger:design:create_pg_rings:location_bottom -value 9400
+set_option -name trigger:design:create_pg_rings:location_top -value 9400
+create_pg_rings -partitions "logic_hw" -nets "VSS" -window false -layers { metal7 metal7 } -widths 4000a -step 8000a -offset { 9400a 9400a 9400a 9400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
+set_option -name window:design:create_pg_rings:state -value hidden
+## trigger_gui -name design:create_pg_rings
+set_option -name window:design:create_pg_rings:state -value visible
+set_option -name window:design:create_pg_rings:state -value hidden
+## trigger_gui -name design:create_pg_stripes
+set_option -name window:design:create_pg_stripes:state -value visible
+set_option -name window:design:create_pg_stripes:size -value {758 575}
+set_option -name trigger:design:create_pg_stripes:layers -value METAL8
+set_option -name trigger:design:create_pg_stripes:step -value 16000
+set_option -name trigger:design:create_pg_stripes:step -value 8000
+set_option -name trigger:design:create_pg_stripes:offset_link -value true
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 1
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 1
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 1740
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 1740
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 17400
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17400
+set_option -name trigger:design:create_pg_stripes:start_length -value 1
+set_option -name trigger:design:create_pg_stripes:start_length -value 14
+set_option -name trigger:design:create_pg_stripes:start_length -value 140
+set_option -name trigger:design:create_pg_stripes:start_length -value 1400
+set_option -name trigger:design:create_pg_stripes:stop_length -value 1
+set_option -name trigger:design:create_pg_stripes:stop_length -value 14
+set_option -name trigger:design:create_pg_stripes:stop_length -value 140
+set_option -name trigger:design:create_pg_stripes:stop_length -value 1400
+set_option -name trigger:design:create_pg_stripes:margin_link -value true
+create_pg_stripes -partitions "logic_hw" -nets "VDD" -window false -layer metal8 -widths 4000a -step 8000a -direction vertical -offset { 17400a 17400a } -margin { 1400a 1400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
+set_option -name window:design:create_pg_stripes:state -value hidden
+zoom_to -target area -xl_area -16316a -yb_area 1077a -xr_area 144630a -yt_area 167762a
+zoom_to -target area -xl_area -25360a -yb_area -29273a -xr_area 175821a -yt_area 179082a
+## trigger_gui -name design:create_pg_stripes
+set_option -name window:design:create_pg_stripes:state -value visible
+set_option -name trigger:design:create_pg_stripes:layers -value METAL7
+set_option -name trigger:design:create_pg_stripes:step -value 16000
+set_option -name trigger:design:create_pg_stripes:step -value 8000
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 1
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 1
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 1740
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 1740
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 17400
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17400
+set_option -name trigger:design:create_pg_stripes:start_length -value 400
+set_option -name trigger:design:create_pg_stripes:stop_length -value 400
+set_option -name trigger:design:create_pg_stripes:start_length -value 9400
+set_option -name trigger:design:create_pg_stripes:stop_length -value 9400
+create_pg_stripes -partitions "logic_hw" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
+set_option -name window:design:create_pg_stripes:state -value hidden
+## trigger_gui -name design:check_design
+set_option -name window:design:check_design:state -value visible
+set_option -name window:design:check_design:size -value {600 300}
+set_option -name window:design:check_design:state -value hidden
+set_option -name window:main:message_area:location -value {328 152}
+set_option -name window:main:message_area:size -value {1592 696}
+set_option -name window:main:message_area:state -value hidden
+set_option -name window:main:message_area:state -value visible
+set_option -name window:main:message_area:dock_side -value floating
+set_option -name window:main:message_area:size -value {1592 783}
+set_option -name window:main:message_area:state -value hidden
+set_option -name window:main:message_area:state -value visible
+set_option -name window:main:message_area:dock_side -value bottom
+set_option -name window:main:message_area:size -value {1592 696}
+set_option -name window:main:message_area:location -value {328 686}
+set_option -name window:main:message_area:size -value {1592 162}
+source flow_scripts/3_route.tcl > LOGs/route3.log
+# get_config -name process -param node
+# config_lib_vias -use_generated true -create true -select true -use_asymmetrical true -use_4cut true
+# config_shell -echo false
+# config_shell -echo false
+# config_timing -disable_clock_gating_checks false
+# set_crpr_spec -method graph_based
+# config_flows -preserve_rcd false
+# config_shell -echo false
+# source scr/config.tcl
+# config_timing -rc_degrade_min_slew_when_rd_less_than_rnet false
+# config_timing -disable_recovery_removal false
+# config_timing -enable_exception_proxy true
+# config_timing -disable_time_borrow false
+# config_timing -disable_annotation_factor_calc true
+# config_timing -enable_clock_propagation_through_three_state_enable_pins false
+# config_timing -disable_internal_inout_cell_paths true
+# config_timing -enable_cond_arcs_with_default true 
+# config_timing -enable_default_for_cond_arcs true
+# config_timing -enable_setup_independent_hold_checks true
+# config_timing -enable_ideal_clock_data_tags true
+# config_timing -enable_clock_gating_propagate true
+# config_timing -disable_seq_case_analysis true
+# config_timing -early_launch_at_borrowing_latches false
+# config_timing -enable_preset_clear_arcs false
+# config_timing -enable_non_unate_clock_paths true
+# config_timing -pt_min_max_compatibility on_chip_variation
+# config_timing -enable_non_unate_clock_paths true
+# config_timing -disable_sequential_generation_of_waveform_preserving_clocks false
+# config_timing -capacitance_violation_threshold 0
+# config_timing -disable_clock_gating_checks false
+# config_timing -enable_default_input_delay false
+# config_extraction -gr_short_route_gcell_span 3
+# config_extraction -search_distance_multiple 15
+# config_extraction -use_thickness_variation false
+# config_extraction -use_thickness_variation_for_cap false
+# config_extraction -use_thickness_variation_for_res true
+# config_extraction -coupling_abs_threshold 0.1f
+# config_extraction -coupling_rel_threshold 1.0
+# ta_debug -cc_ratio 0
+# config_route_timing -name dvia_mode -value dfm
+# config_place_detail -name follow_drc_for
+# source nrf_customization.tcl
+# config_extraction -use_thickness_variation false
+# config_extraction -use_thickness_variation_for_cap false
+# config_extraction -use_thickness_variation_for_res true
+# set_crpr_spec -crpr_threshold 5p
+# set_crpr_spec -method graph_based
+# set_crpr_spec -transition same_transition
+# fk_msg Max Length Constraint
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_max_length -length_threshold 1000u
+# report_max_length
+# fk_msg Max Length Set to 10000000
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Running RRT with Interleave Optimization
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# run_route_timing -mode interleave_opt -cpus 2 -messages verbose
+# help run_route_timing -return
+# print_table -title Start run_route_timing flow -column_names Argument Value -values cpus 2 messages verbose timing_mode si preserve_clocks auto save_db_stages {} stop_after false start_from false resume false skip_stages {} run_stages {} mode interleave_opt trial false dump_qor_stages {} user_params {}
+# fk_msg Setting up run_route_timing flow ...
+
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_messages -message_id UI24 -max_messages 0
+# config_messages -message_id UI24 -max_log_messages 0
+# config_messages -message_id UI34 -max_messages 0
+# config_messages -message_id UI34 -max_log_messages 0
+# config_messages -message_id UI54 -max_messages 0
+# config_messages -message_id UI54 -max_log_messages 0
+# config_messages -message_id UI705 -max_messages 0
+# config_messages -message_id UI705 -max_log_messages 0
+# config_messages -message_id UI156 -max_messages 0
+# config_messages -message_id UI156 -max_log_messages 0
+# config_messages -message_id config1 -max_messages 0
+# config_messages -message_id config1 -max_log_messages 0
+# config_messages -message_id config3 -max_messages 0
+# config_messages -message_id config3 -max_log_messages 0
+# config_messages -message_id config5 -max_messages 0
+# config_messages -message_id config5 -max_log_messages 0
+# config_messages -message_id CSDB57 -max_messages 0
+# config_messages -message_id CSDB57 -max_log_messages 0
+# config_messages -message_id CSDB87 -max_messages 0
+# config_messages -message_id CSDB87 -max_log_messages 0
+# config_messages -message_id TA_CMDS1618 -max_messages 0
+# config_messages -message_id TA_CMDS1618 -max_log_messages 0
+# config_messages -message_id TA_CMDS1619 -max_messages 0
+# config_messages -message_id TA_CMDS1619 -max_log_messages 0
+# config_messages -message_id TA_CMDS7412 -max_messages 0
+# config_messages -message_id TA_CMDS7412 -max_log_messages 0
+# config_messages -message_id SDB43 -max_messages 0
+# config_messages -message_id SDB43 -max_log_messages 0
+# config_messages -message_id CSDB45 -max_messages 0
+# config_messages -message_id CSDB45 -max_log_messages 0
+# fk_msg 'design' variable does not exist, using 'top_partition' as design name
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_top_partition
+# create_property -name tdro_last_stage -object_type root -data_type string -storage sparse -persistent true -init_value null
+# create_property -name follow_gr -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_layer -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_channel -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# fk_msg -set_prompt RRT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value RRT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -level _d%ve_
+# fk_msg -set_verbosity_filter debug
+# new_config_flow -name verbose_level
+# new_config_flow -name verbose_level -value debug -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_application -cpus 1
+# config_timing -cpus 2
+# config_default_value -command route_global -argument check -value  technology libraries routing 
+# config_default_value -command route_global -argument messages -value normal
+# config_default_value -command route_track -argument check -value  technology libraries routing 
+# config_default_value -command route_track -argument messages -value normal
+# config_default_value -command route_final -argument check -value  technology libraries routing 
+# config_default_value -command route_final -argument messages -value normal
+# config_default_value -command route_si_repair -argument check -value  
+# config_default_value -command route_si_repair -argument messages -value normal
+# config_route_final -opt_strict_drc false
+# write_db -data design -file dbs/route.db
+# save_db -directory dbs/route.db -overwrite true -data design -cpus 4 -description 
+# config_shell -echo false
+write_verilog -file netlist.v

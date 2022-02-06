@@ -1,0 +1,16 @@
+#--------------------------------------------------------------------
+#         date     : Mon Jan 03 11:05:34 EET 2022
+#         ppid/pid : 3105/3115
+#         hostname : localhost.localdomain
+#         arch/os  : x86_64/Linux-3.10.0-1062.el7.x86_64 
+#         install  : /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+#         currdir  : /home/vlsi/Desktop/Lab4/Synthesis
+#         logfile  : /home/vlsi/Desktop/Lab4/Synthesis/oasys.log.01
+#         tmpdir   : /tmp/oasys.3105/
+#--------------------------------------------------------------------
+# Starting Gui Interactive Session
+source /home/vlsi/Desktop/Lab4/Synthesis/scripts/run.tcl
+#    source scripts/0_init_design.tcl
+#    source scripts/1_read_design.tcl
+#    source scripts/2_synthesize_optimize.tcl
+#    source scripts/3_export_design.tcl

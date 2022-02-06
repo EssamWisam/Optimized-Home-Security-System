@@ -1,0 +1,33 @@
+*******************************************************************
+*      Copyright (c) 2004 - 2020 Mentor Graphics Corporation      *
+*                       All Rights Reserved                       *
+*                                                                 *
+*                                                                 *
+*   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION   *
+*      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION       *
+*        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.        *
+*                                                                 *
+* Program : ../bin/Linux-x86_64-O/oasysGui                        *
+* Version : 19.2-p002                                             *
+* Date    : Fri Jan 10 14:27:22 PST 2020                          *
+* Build   : releases/19.2-49727.0-CentOS_6.5-O                    *
+*******************************************************************
+ config sdc-v1.7-cpd cli cmd explore mxdb
+loading: oasys fp rta dft RTTessent-d ctl verify edit bt upf-c aos conc vcd prot int
+checked out licenses: psyncore psynfloorplan psyndft psynpower
+
+         date     : Mon Jan 03 11:05:20 EET 2022
+         ppid/pid : 3043/3053
+         hostname : localhost.localdomain
+         arch/os  : x86_64/Linux-3.10.0-1062.el7.x86_64 
+         install  : /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+         currdir  : /home/vlsi/Desktop/Lab4/Synthesis
+         logfile  : /home/vlsi/Desktop/Lab4/Synthesis/oasys.log.00
+         tmpdir   : /tmp/oasys.3043/
+loading: command line file: gui
+> source gui
+couldn't read file "gui": no such file or directory
+    while executing
+"tcl_source gui"
+couldn't read file "gui": no such file or directory
+Exiting due to script error: gui

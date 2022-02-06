@@ -1,0 +1,1 @@
+Note that the folder hierarchy and naming is as in the labs to avoid any issues while running the scripts. The folder should be on the desktop.
